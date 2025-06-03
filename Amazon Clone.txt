@@ -1,0 +1,548 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amazon Clone</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>=
+  <header>
+    <div class="logo">amazon<span>.in</span></div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search products"/>
+      <button>🔍</button>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav id="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Deals</a>
+      <a href="#">Orders</a>
+      <a href="#">Cart 🛒</a>
+    </nav>
+  </header>
+  <section class="mothers-day">
+  <h1>🎁 Gift Your Mother – Mother's Day Special</h1>
+  <div class="gift-grid">
+    <div class="gift-card">
+      <img src="image/candles.jpeg" alt="Scented Candles">
+      <h3>Scented Candle Set</h3>
+      <p><del>₹899</del> ₹499</p>
+    </div>
+    <div class="gift-card">
+      <img src="image/rings.jpeg" alt="Jewelry Box">
+      <h3>Elegant Jewelry Box</h3>
+      <p><del>₹1,299</del> ₹799</p>
+    </div>
+    <div class="gift-card">
+      <img src="image/mugs.jpeg"Coffee Mug">
+      <h3>Best Mom Mug</h3>
+      <p><del>₹399</del> ₹199</p>
+    </div>
+  </div>
+</section>
+
+  <main>
+    <h2>Popular Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="image/bluwtooth.jpeg" alt="Product 1">
+        <h3>Wireless Headphones</h3>
+        <p>₹1,999</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="image/mobile.jpeg" alt="Product 2">
+        <h3>Smartphone</h3>
+        <p>₹12,499</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="image/toys.jpeg" alt="Product 3">
+        <h3>childrends playthings</h3>
+        <p>₹999</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </main>
+  <main>
+  <h2>Today's Deals</h2>
+  <div class="product-grid">
+    <div class="product-card">
+      <div class="sale-badge">50% OFF</div>
+      <img src="image/animals.jpeg" alt="Product">
+      <span class="category">Feed</span>
+      <h3>Animal's food</h3>
+      <div class="stars">⭐⭐⭐⭐☆</div>
+      <p class="price"><del>₹3,999</del> ₹1,999</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <div class="sale-badge">Deal of the Day</div>
+      <img src="image/makeup.jpeg" alt="Product">
+      <span class="category">skin care</span>
+      <h3>Makeup</h3>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p class="price"><del>₹18,999</del> ₹12,499</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <div class="sale-badge">30% OFF</div>
+      <img src="image/wear.jpeg" alt="Product">
+      <span class="category"></span>
+      <h3>Women's wear</h3>
+      
+      <div class="stars">⭐⭐⭐⭐☆</div>
+      <p class="price"><del>₹1,299</del> ₹999</p>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+</main>
+<section class="new-arrivals">
+  <h2>🆕 New Arrivals</h2>
+  <div class="arrival-grid">
+    <div class="product-card">
+      <img src="image/watches.jpeg" alt="Smartwatch">
+      <h3>Smart Watch</h3>
+      <p><del>₹4,999</del> ₹2,999</p>
+    </div>
+    <div class="product-card">
+      <img src="buds.jpeg" alt="Bluetooth Earbuds">
+      <h3>Bluetooth Earbuds</h3>
+      <p><del>₹2,499</del> ₹1,299</p>
+    </div>
+    <div class="product-card">
+      <img src="image/stand.jpeg" alt="Laptop Stand">
+      <h3>Adjustable Laptop Stand</h3>
+      <p><del>₹1,999</del> ₹999</p>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="#">Conditions of Use</a> |
+    <a href="#">Privacy Notice</a> |
+    <a href="#">Help</a>
+  </div>
+
+  <p>&copy; 2025 Amazon Clone. Built by Pragya for educational purposes.</p>
+
+  <div class="disclaimer">
+    <h4>⚠️ Disclaimer</h4>
+    <p>
+      This website is a frontend clone of Amazon, created solely for learning and portfolio demonstration.
+      All images, brand names, and logos used here are the property of Amazon.com, Inc. and its affiliates.
+    </p>
+    <p>
+      This project is not associated with or endorsed by Amazon. It is made for educational purposes only.
+    </p>
+  </div>
+</footer>
+
+  <footer>
+    <p>© 2025 Amazon Clone by Pragya</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+//css code
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+}
+
+header {
+  background-color: #131921;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.logo span {
+  color: orange;
+}
+
+.search-bar {
+  display: flex;
+  flex: 1;
+  max-width: 500px;
+  margin: 10px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 8px;
+}
+
+.search-bar button {
+  background-color: orange;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.product-card button {
+  margin-top: 10px;
+  background: orange;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #131921;
+  color: white;
+  margin-top: 30px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .search-bar {
+    order: 3;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    display: none;
+    width: 100%;
+    background: #232f3e;
+  }
+
+  nav a {
+    padding: 10px;
+    border-top: 1px solid #444;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav.show {
+    display: flex;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+}
+
+header {
+  background-color: #131921;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.logo span {
+  color: orange;
+}
+
+.search-bar {
+  display: flex;
+  flex: 1;
+  max-width: 500px;
+  margin: 10px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 8px;
+}
+
+.search-bar button {
+  background-color: orange;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.product-card button {
+  margin-top: 10px;
+  background: orange;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #131921;
+  color: white;
+  margin-top: 30px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .search-bar {
+    order: 3;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    display: none;
+    width: 100%;
+    background: #232f3e;
+  }
+
+  nav a {
+    padding: 10px;
+    border-top: 1px solid #444;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav.show {
+    display: flex;
+  }
+}.mothers-day {
+  padding: 30px;
+  background: #fff0f5;
+  text-align: center;
+}
+
+.mothers-day h2 {
+  font-size: 26px;
+  color: #c2185b;
+  margin-bottom: 20px;
+}
+
+.gift-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.gift-card {
+  background: #fff;
+  border: 1px solid #ccc;
+  width: 200px;
+  border-radius: 10px;
+  padding: 10px;
+  transition: transform 0.3s;
+}
+
+.gift-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.gift-card h3 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+}
+
+.gift-card p {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+.gift-card:hover {
+  transform: scale(1.05);
+}
+.new-arrivals {
+  padding: 30px;
+  background: #f0f8ff;
+  text-align: center;
+}
+
+.new-arrivals h2 {
+  font-size: 26px;
+  color: #1a73e8;
+  margin-bottom: 20px;
+}
+
+.arrival-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.arrival-grid .product-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  width: 200px;
+  border-radius: 10px;
+  padding: 10px;
+  transition: transform 0.3s;
+}
+
+.arrival-grid .product-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.arrival-grid .product-card h3 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+}
+
+.arrival-grid .product-card p {
+  color: #388e3c;
+  font-weight: bold;
+}
+
+.arrival-grid .product-card:hover {
+  transform: scale(1.05);
+}
+.site-footer {
+  background-color: #232f3e;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.site-footer .footer-links a {
+  color: #ddd;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+.site-footer .footer-links a:hover {
+  text-decoration: underline;
+}
+
+.site-footer .disclaimer {
+  margin-top: 20px;
+  background-color: #111;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 13px;
+  color: #ccc;
+}
+
+.site-footer .disclaimer h4 {
+  color: #ffcc00;
+  margin-bottom: 8px;
+}
+//js
+function toggleMenu() {
+  const nav = document.getElementById("nav-links");
+  nav.classList.toggle("show");
+}
